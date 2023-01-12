@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+option csharp_namespace = "UserGrpcService.Protos";
+
+import "google/protobuf/timestamp.proto";
+
+service UserService
+{
+	rpc GetUserList (Empty) returns (Users);
+	rpc GetUser (GetUserDetailRequest) returns (UserDetail);
+	rpc CreateUser (CreateUserDetailRequest) returns (UserDetail);
+	rpc UpdateUser (UpdateUserDetailRequest) returns (UserDetail);
+	rpc DeleteUser (DeleteUserDetailRequest) returns (DeleteUserDetailResponse);
+}
+
+message GetUserDetailRequest
+{
+	string id= 1;
+}
+
+message UserDetail {
+	string id = 1;
+	string userName = 2;
+	string city = 3;
+   string DateOfBirth = 4;
+	 
+}
+
+message CreateUserDetailRequest {
+	UserDetail User = 1;
+}
+
+message UpdateUserDetailRequest {
+	UserDetail User = 1;
+}
+
+message DeleteUserDetailRequest {
+	int32 productId = 1;
+}
+
+message DeleteUserDetailResponse {
+	bool isDelete = 1;
+}
+
+message Empty{
+
+}
+
+message Users {
+  repeated UserDetail items = 1;
+}

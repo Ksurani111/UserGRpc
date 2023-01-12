@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "sS957/ySExmJMA0uEF1cT1N75LTlCKbAdNwWGyiL184=",
+  "Source": "UserGrpcService",
+  "BasePath": "_content/UserGrpcService",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

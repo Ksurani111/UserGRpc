@@ -1,0 +1,3 @@
+obj\Release\net6.0/Userdetails.cs \
+obj\Release\net6.0/UserdetailsGrpc.cs: C:/Users/Keyur/.nuget/packages/grpc.tools/2.40.0/build/native/include/google/protobuf/timestamp.proto\
+ ../UserGrpcService/Protos/userdetails.proto
